@@ -1,17 +1,53 @@
-TABOKAAAH
+# 🌐 `blog-api` — REST API Server for a Blog Platform
 
-**Getting Started with Create React App**
+> *A Node.js + Express + MongoDB backend for managing blog content — with authentication, file uploads, and tag management.*
 
-This project was initialized with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)  
+[![Node.js Version](https://img.shields.io/badge/Node.js-%3E%3D%2018-green)](https://nodejs.org/)  
+[![MongoDB](https://img.shields.io/badge/MongoDB-%3E%3D%204.0-green)](https://www.mongodb.com/)
 
-**Available Scripts**
+---
 
-In the project directory, you can run:
+## 🔍 Overview
 
-**npm start** – Runs the app in development mode at [http://localhost:3000](http://localhost:3000). The page reloads on changes, and lint errors appear in the console.
+`blog-api` is a **REST API** backend built with **Node.js, Express, and MongoDB**, designed to handle user authentication, content management, and media uploads for a blog platform. The server includes:
 
-**npm test** – Launches the test runner in interactive watch mode. More details [here](https://facebook.github.io/create-react-app/docs/running-tests).
+- **JWT-based authentication** for secure user sessions  
+- **CRUD operations** for blog posts with validation  
+- **File upload handling** with `multer` for image management  
+- **Tag-based content discovery** for popular tags  
+- **Input validation** using `Joi` for data integrity  
+- **CORS support** for cross-origin requests  
 
-**npm run build** – Builds the app for production, optimizing performance. The output is stored in the **build** folder. More details on [deployment](https://facebook.github.io/create-react-app/docs/deployment).
+This project serves as the backend for a modern blog application, emphasizing **security**, **scalability**, and **maintainability**.
 
-**npm run eject** – Removes Create React App’s default setup, giving full control over configuration. This is irreversible.
+---
+
+##  Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Node.js (ESM) | JavaScript runtime environment |
+| Express | Web framework for routing and middleware |
+| MongoDB + Mongoose | NoSQL database and ODM |
+| Multer | File upload middleware |
+| CORS | Cross-origin resource sharing |
+| JWT | Authentication and session management |
+| Joi | Input validation and sanitization |
+
+---
+
+##  Quick Start
+
+### Prerequisites
+
+- **Node.js** >= 18
+- **MongoDB** (local instance or MongoDB Atlas)
+- A `.env` file with environment variables (see [Configuration](#-configuration))
+
+### Setup
+
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd blog-api
